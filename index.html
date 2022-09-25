@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">			
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>TASK2</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>IUAB Token Transactions</h1> 
+            <button id="connect" >Connect to MetaMask</button>
+        </div>
+
+        <div id="main" hidden>
+            <h2 class="center">Hello, Mr.Owner!</h2>
+
+            <div id="info">
+                <div class="info-child" id="info-keys">
+                    <div>Your address</div>
+                    <div>Token balance</div>
+                </div>
+                <div class="info-child" id="info-values">
+                    <div id="addr"></div>
+                    <div id="bal"></div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button id="submit">Get transactions</button>
+            </div>
+
+
+
+        </div>
+
+        <div id="tx">
+            <div ></div>
+        </div>
+
+        <script src="https://unpkg.com/@metamask/detect-provider@1.2.0/dist/detect-provider.min.js" ></script>
+        <script src="scr.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+.center { text-align: center; }
+
+body {
+    padding: 5px 25%;
+    color: #222;
+    background-color: #fcffe3;
+    font-family: Monospace;
+}
+
+#header { text-align: center; }
+#main { padding: 20px; }
+
+#info {
+    padding: 5px;
+    display: flex;
+}
+#info-keys {
+    float: left;
+    margin-right: 10px;
+    font-weight: 600;
+}
+#info-values { flex: 1; }
+.info-child div:not(:first-child) { margin-top: 5px; }
+#info-keys div::after { content: ": "; }
+
+
